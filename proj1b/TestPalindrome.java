@@ -19,7 +19,7 @@ public class TestPalindrome {
 
     @Test
     public void testIsPalindromeOverload() {
-        assertTrue(palindrome.isPalindrome("noon", offByOnecc));
+        assertFalse(palindrome.isPalindrome("noon", offByOnecc));
     }
 
     @Test
