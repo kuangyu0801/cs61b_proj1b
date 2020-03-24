@@ -1,7 +1,7 @@
 /**
  * using two sentinel topology
  * */
-public class LinkedListDeque <T> implements Deque<T> {
+public class LinkedListDeque<T> implements Deque<T> {
     private DequeNode sentiFirst;
     private DequeNode sentiLast;
     private int size;
