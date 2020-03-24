@@ -8,7 +8,7 @@ public class Palindrome {
         return charDeque;
     }
 
-    private boolean charRecursive( Deque<Character> charDeque) {
+    private boolean charRecursive(Deque<Character> charDeque) {
         if (charDeque.size() == 1 || charDeque.size() == 0) {
             return true;
         }
@@ -26,7 +26,7 @@ public class Palindrome {
         return charRecursive(charDeque);
     }
 
-    private boolean charRecursive( Deque<Character> charDeque, CharacterComparator cc) {
+    private boolean charRecursive(Deque<Character> charDeque, CharacterComparator cc) {
         if (charDeque.size() == 1 || charDeque.size() == 0) {
             return true;
         }
