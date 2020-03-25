@@ -19,7 +19,14 @@ public class TestPalindrome {
 
     @Test
     public void testIsPalindromeOverload() {
+        assertFalse(palindrome.isPalindrome("non", offByOnecc));
+        assertFalse(palindrome.isPalindrome("deedeed", offByOnecc));
+        assertFalse(palindrome.isPalindrome("hallah", offByOnecc));
         assertFalse(palindrome.isPalindrome("noon", offByOnecc));
+        assertTrue(palindrome.isPalindrome("tuts", offByOnecc));
+        assertTrue(palindrome.isPalindrome("tutu", offByOnecc));
+        assertTrue(palindrome.isPalindrome("ungot", offByOnecc));
+        assertTrue(palindrome.isPalindrome("a", offByOnecc));
     }
 
     @Test
