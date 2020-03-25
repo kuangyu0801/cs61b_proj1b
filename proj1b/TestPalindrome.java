@@ -26,10 +26,18 @@ public class TestPalindrome {
     public void testIsPalindromeAllTrue() {
 
         assertTrue(palindrome.isPalindrome("noon"));
+        assertTrue(palindrome.isPalindrome("non"));
+        assertTrue(palindrome.isPalindrome("deedeed"));
+        assertTrue(palindrome.isPalindrome("hallah"));
+        assertTrue(palindrome.isPalindrome("a"));
     }
 
     @Test
     public void testIsPalindromeAllFalse() {
         assertFalse(palindrome.isPalindrome("cat"));
+        assertFalse(palindrome.isPalindrome("caca"));
+        assertFalse(palindrome.isPalindrome("Cac"));
+        assertTrue(palindrome.isPalindrome("Deedeed"));
+        assertTrue(palindrome.isPalindrome("hH"));
     }
 }
