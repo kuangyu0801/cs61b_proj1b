@@ -37,7 +37,7 @@ public class TestPalindrome {
         assertFalse(palindrome.isPalindrome("cat"));
         assertFalse(palindrome.isPalindrome("caca"));
         assertFalse(palindrome.isPalindrome("Cac"));
-        assertTrue(palindrome.isPalindrome("Deedeed"));
-        assertTrue(palindrome.isPalindrome("hH"));
+        assertFalse(palindrome.isPalindrome("Deedeed"));
+        assertFalse(palindrome.isPalindrome("hH"));
     }
 }
