@@ -8,11 +8,9 @@ public class OffByOne implements CharacterComparator {
     @Override
     public boolean equalChars(char x, char y) {
         //TODO do I need null check?
-        if (Character.isAlphabetic(x) && Character.isAlphabetic(y)) {
-            int eval = Character.toLowerCase(x) - Character.toLowerCase(y);
-            if (Math.abs(eval) == 1) {
-                return true;
-            }
+        int eval = Character.valueOf(x) - Character.valueOf(y);
+        if (eval == 1 || eval == -1) {
+            return true;
         }
         return false;
     }
